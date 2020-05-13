@@ -1,0 +1,7 @@
+
+<div *ngIf="toast.length >0" class="toast-container">
+    <alert [dismissOnTimeout]="toast.timeout" [type]="toast.type" *ngFor="let toast of toast">
+        {{toast.message}}
+    </alert>
+
+</div>
